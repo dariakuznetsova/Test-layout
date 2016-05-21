@@ -1,0 +1,38 @@
+
+header, footer, .materials-info .materials-sidebar, .print__link, .materials-content__image img, .materials-content .order-online {
+	display: none;
+}
+
+.material-block .title-block{
+	border-bottom: none;
+}
+
+.materials-content {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.materials-content__image h1 {
+	position: relative;
+	text-align: center;
+	padding-top: 50px;
+	line-height: auto;
+}
+
+.materials-content__image {
+	min-height: auto;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.material-block p {
+	max-width: 90%;
+	margin: 70px auto 0 auto;
+}
+
+.last-p {
+	margin-top: 20px;
+}
+
+
+

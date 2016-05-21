@@ -1,0 +1,275 @@
+doctype html
+html(lang='en-ru')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name='viewport' content='width=device-width,initial-scale=1.0')
+		link(rel="stylesheet" href="css/normalize.css")
+		link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" type="text/css" href="css/stylesheet.css")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
+		link(rel="stylesheet" type="text/css" href="css/mediaqueries.css")
+		script(src="js/vendor/modernizr-custom.js")
+		title Интерсфера 
+			
+	body
+		.main-wrap
+			.main-content#fullpage
+				.popup
+					.form-wrapper
+						form
+							fieldset
+								input(type="text" placeholder="Введите имя")
+							fieldset
+								input(type="text" placeholder="Введите телефон")
+							fieldset
+								textarea(type="text" placeholder="Описание")
+							fieldset
+								button(type="submit") Отправить
+
+				.slider-block.section
+						header
+							.wrapper
+								ul.menu-list
+									- var header_menu = {'Главная':'/', 'О компании':'#', 'Наши объекты':'#', 'Отзывы':'#', 'Партнеры':'#', 'Статьи':'#', 'Контакты':'#'}
+									- each val, key in header_menu
+										li.menu__item
+											a(href='#{val}').menu__link= key
+
+								.header-order
+									.order-icon
+									a(href='#').header-order__link.modal_link Online заявка
+							.header-information.wrapper
+								.hover-img-wrapper
+									a(href='materials.html').div-hover
+									img(src='images/vert-line.png').hover-img
+								.hover-img-wrapper
+									a(href='#').div-hover
+									img(src='images/vert-line.png').hover-img
+								.hover-img-wrapper
+									a(href='#').div-hover
+									img(src='images/vert-line.png').hover-img
+								.hover-img-wrapper
+									a(href='#').div-hover
+									img(src='images/vert-line.png').hover-img
+								.hover-img-wrapper
+									a(href='#').div-hover
+									img(src='images/vert-line.png').hover-img
+								
+								.header__info
+									.logo-header
+										img(src='images/logo-black.svg' onerror="this.onerror=null; this.src='images/logo-black.png'")
+									.header__contacts
+										.contacts__tels
+											p 412-41-08
+											p 278-47-76
+											p 278-44-52
+										.contacts__address
+											p г.Нижний Новгород
+												br
+												|ул. Бориса Панина дом 7, корпус 5
+								table.header__materials
+									tr.first-tr
+										td
+											img(src='images/icons/icon-1.svg' onerror="this.onerror=null; this.src='images/icons/icon-1.png'")
+										td
+											img(src='images/icons/icon-2.svg' onerror="this.onerror=null; this.src='images/icons/icon-2.png'")
+										td
+											img(src='images/icons/icon-3.svg' onerror="this.onerror=null; this.src='images/icons/icon-3.png'")
+										td
+											img(src='images/icons/icon-4.svg' onerror="this.onerror=null; this.src='images/icons/icon-4.png'")
+										td
+											img(src='images/icons/icon-5.svg' onerror="this.onerror=null; this.src='images/icons/icon-5.png'")
+									tr.second-tr
+										td нерудные материалы
+										td кабель
+										td кирпич
+										td строительство дорог
+										td асфальт
+
+						.wide-wrapper
+							.wrapper
+								.slider
+									ul
+										li.slider__block
+											.logo
+												.logo-wrapper
+													img(src='images/logo-white.svg' onerror="this.onerror=null; this.src='images/logo-white.png'")
+											.slider-text
+												h1.h1 Интерсфера
+												p Оптовая поставка нерудных материалов - 
+												.material.visible
+													span песок
+												.material
+													span ОПГС
+												.material
+													span щебень
+												.material
+													span асфальт
+												p Услуги спецтехники
+										li.slider__block
+											.logo
+												.logo-wrapper
+													img(src='images/logo-white.svg' onerror="this.onerror=null; this.src='images/logo-white.png'")
+											.slider-text
+												h1.h1 Интерсфера
+												p поставка кабельно-проводниковой продукции по территории РФ
+										li.slider__block
+											.logo
+												.logo-wrapper
+													img(src='images/logo-white.svg' onerror="this.onerror=null; this.src='images/logo-white.png'")
+											.slider-text
+												h1.h1 Интерсфера
+												p поставка кирпича
+										li.slider__block
+											.logo
+												.logo-wrapper
+													img(src='images/logo-2.svg' onerror="this.onerror=null; this.src='images/logo-2.png'")
+											.slider-text
+												h1.h1 «Первый город»
+												p Строительство автодорог. Благоустройство территорий
+										li.slider__block
+											.logo
+												.logo-wrapper
+													img(src='images/logo-3.svg' onerror="this.onerror=null; this.src='images/logo-3.png'")
+											.slider-text
+												h1.h1 Асфальтовый завод
+												p производство и укладка асфальта
+						.pagination-wrapper
+							.wrapper
+								.pagination
+									.first-line
+										a(href='#').pagination__prev.
+											&#60; Назад
+										a(href='#').pagination__next.
+											Вперед &#62;
+									ul.second-line
+										li.pagination__block.active_pagination
+										li.pagination__block
+										li.pagination__block
+										li.pagination__block
+										li.pagination__block
+							ul#menu
+								li(data-menuanchor="secondSection")
+									a(href="#secondSection").absolute__link
+										span Крути вниз
+
+
+				.main.section#secondSection
+					.wrapper.main-wr
+						.main-advantages
+							.main-advantages-absolute.one
+							.main-advantages-absolute.two
+							.main-advantages-absolute.three
+							.main-advantages-absolute.four
+							.main-advantages-absolute.five
+							.main-advantages__title
+								p Почему наша компания
+								p
+									span Хорошая
+									span Лучшая
+									В данной области
+							ul.main-advantages-list
+								li.main-advantages__item.
+									С 2002 года на рынке строительных услуг. Стабильность. Надежность
+								li.main-advantages__item Свой парк а/м.
+									br
+									|Оперативные сроки доставки
+								li.main-advantages__item.
+									Наличие продукции на складе
+								li.main-advantages__item.
+									Собственное производство асфальта. Гибкая ценовая политика
+								li.main-advantages__item.
+									Логистически выгодное местонахождение базы (Федосенко, Бутурлино)
+
+
+						.main-about
+							h2.main-about-title О компании
+							.main-about-graph
+								p.graph__title соотношение объёмов по 3 видам в процентном соотношении
+								.graph__img
+									img(src='images/graph.png')
+									img(src='images/partners-1.png')
+									img(src='images/partners-2.png')
+								ul.graph-tabs-list
+									li.graph__item.graph__item-active График 1
+									li.graph__item График 2
+									li.graph__item График 3
+							.main-about-text
+								p.
+									Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Задача организации, в особенности же укрепление и развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом консультация с широким активом в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.
+								p.last__p Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности играет важную роль в формировании направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что консультация с широким активом влечет за собой процесс внедрения и модернизации систем массового участия	
+									a(href='#') [...]
+								a(href='#').order__link.modal_link
+									.order__icon
+									.order__block Online заявка
+
+						.main-partners
+							.partners-title.our-p
+								
+								h2 Наши партнеры
+								
+							.track.my-track
+								.pagination.partners-title
+									a(href='#').prev__button.prev &#60; Назад
+									a(href='#').next__button.next Вперед &#62;
+								.view-port
+									.partners-slider.slider-container
+										.partners-slider__item.item
+											img(src='images/partners-1.png' alt='Столица Нижний')
+										.partners-slider__item.item
+											img(src='images/partners-2.png' alt='Газпром')
+										.partners-slider__item.item
+											img(src='images/partners-3.png' alt='Глобалстрой')
+										.partners-slider__item.item
+											img(src='images/partners-4.png' alt='Лента')
+										.partners-slider__item.item
+											img(src='images/partners-5.png' alt='АСТ')
+										.partners-slider__item.item
+											img(src='images/partners-3.png' alt='Глобалстрой')
+										.partners-slider__item.item
+											img(src='images/partners-4.png' alt='Лента')
+										.partners-slider__item.item
+											img(src='images/partners-5.png' alt='АСТ')
+										.partners-slider__item.item
+											img(src='images/partners-2.png' alt='Газпром')
+										.partners-slider__item.item
+											img(src='images/partners-3.png' alt='Глобалстрой')
+										.partners-slider__item.item
+											img(src='images/partners-4.png' alt='Лента')
+
+			footer.footer
+				.wrapper
+					.upper-block.wrapper
+						ul.menu-list
+							- var header_menu = ['Главная', 'О компании', 'Наши объекты', 'Отзывы', 'Партнеры', 'Статьи', 'Контакты']
+							- each item in header_menu
+								li.menu__item
+									a(href='#').menu__link= item
+					.middle-block
+						.footer__logos
+							.img-wrap
+								img(src='images/logo-white.svg' onerror="this.onerror=null; this.src='images/logo-white.png'")
+							.img-wrap
+								img(src='images/logo-2.svg' onerror="this.onerror=null; this.src='images/logo-2.png'")
+							.img-wrap
+								img(src='images/logo-3.svg' onerror="this.onerror=null; this.src='images/logo-3.png'")
+						.footer__contacts
+							.contacts__tels
+								p 412-41-08
+								p 278-47-76
+								p 278-44-52
+							.contacts__address
+								p г.Нижний Новгород ул. Бориса Панина дом 7, корпус 5
+					.lower-block
+						.copyright Copyright &#169; 2015 Интерсфера
+						.developed_by
+							img(src='images/site52-logo.png')
+
+		script(src="js/vendor/jquery.min.js")
+		script(src="js/vendor/jquery.bpopup.min.js")
+		script(type="text/javascript" src='js/vendor/jquery.silver_track.js' charset="utf-8")
+		script(type="text/javascript" src='js/vendor/jquery.silver_track.navigator.js' charset="utf-8")
+		//- script(src="js/vendor/jquery.fullPage.js")
+		//- script(src="js/vendor/jquery.slimscroll.min.js")
+		script(src="js/main.js")

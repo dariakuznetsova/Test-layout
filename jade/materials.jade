@@ -1,0 +1,184 @@
+doctype html
+html(lang='en-ru')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name='viewport' content='width=device-width,initial-scale=1.0')
+		link(rel="stylesheet" href="css/normalize.css")
+		link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" type="text/css" href="css/stylesheet.css")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
+		link(media="print" rel="stylesheet" href="css/print.css")
+		script(src="js/vendor/modernizr-custom.js")
+		title Нерудные материалы
+			
+	body
+		.materials.main-wrap
+			.main-content.wrapper
+				.popup
+					.form-wrapper
+						form
+							fieldset
+								input(type="text" placeholder="Введите имя")
+							fieldset
+								input(type="text" placeholder="Введите телефон")
+							fieldset
+								textarea(type="text" placeholder="Описание")
+							fieldset
+								button(type="submit") Отправить
+
+				
+				header
+					.wrapper
+						ul.menu-list
+							- var header_menu = {'Главная':'index.html', 'О компании':'#', 'Наши объекты':'#', 'Отзывы':'#', 'Партнеры':'#', 'Статьи':'#', 'Контакты':'#'}
+							- each val, key in header_menu
+								li.menu__item
+									a(href='#{val}').menu__link= key
+						.header-order
+							.order-icon
+							a(href='#').header-order__link.modal_link Online заявка
+					.header-information.wrapper
+						.hover-img-wrapper
+							a(href='materials.html').div-hover
+							img(src='images/vert-line.png').hover-img
+						.hover-img-wrapper
+							a(href='#').div-hover
+							img(src='images/vert-line.png').hover-img
+						.hover-img-wrapper
+							a(href='#').div-hover
+							img(src='images/vert-line.png').hover-img
+						.hover-img-wrapper
+							a(href='#').div-hover
+							img(src='images/vert-line.png').hover-img
+						.hover-img-wrapper
+							a(href='#').div-hover
+							img(src='images/vert-line.png').hover-img
+						
+						.header__info
+							.logo-header
+								img(src='images/logo-black.svg' onerror="this.onerror=null; this.src='images/logo-black.png'")
+							.header__contacts
+								.contacts__tels
+									p 412-41-08
+									p 278-47-76
+									p 278-44-52
+								.contacts__address
+									p г.Нижний Новгород
+										br
+										|ул. Бориса Панина дом 7, корпус 5
+						table.header__materials
+							tr.first-tr
+								td
+									img(src='images/icons/icon-1.svg' onerror="this.onerror=null; this.src='images/icons/icon-1.png'")
+								td
+									img(src='images/icons/icon-2.svg' onerror="this.onerror=null; this.src='images/icons/icon-2.png'")
+								td
+									img(src='images/icons/icon-3.svg' onerror="this.onerror=null; this.src='images/icons/icon-3.png'")
+								td
+									img(src='images/icons/icon-4.svg' onerror="this.onerror=null; this.src='images/icons/icon-4.png'")
+								td
+									img(src='images/icons/icon-5.svg' onerror="this.onerror=null; this.src='images/icons/icon-5.png'")
+							tr.second-tr
+								td нерудные материалы
+								td кабель
+								td кирпич
+								td строительство дорог
+								td асфальт
+
+				.materials-info.wrapper
+					.materials-sidebar
+						.materials-sidebar__title Нерудные материалы
+						ul.materials-sidebar-list
+							li.materials-sidebar__item
+								a(href='#').materials-sidebar__link Щебень гранитный
+							li.materials-sidebar__item
+								a(href='#').materials-sidebar__link Щебень известняковый
+							li.materials-sidebar__item
+								a(href='#').materials-sidebar__link Песок
+							li.materials-sidebar__item
+								a(href='#').materials-sidebar__link ОПГС
+
+					.materials-content
+						.material-block
+							.materials-content__image
+								.title-block
+									h1 Щебень гранитный
+								a(href='javascript:window.print()').print__link
+								img(src='images/material-img.jpg' alt='щебень гранитный')
+								.order-online
+									a(href='#').order-online__link.modal_link Online заявка
+							p.
+								Идейные соображения высшего порядка, а также сложившаяся структура организации представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. С другой стороны новая модель организационной деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке форм развития. Таким образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Товарищи! дальнейшее развитие различных форм деятельности требуют от нас анализа систем массового участия.
+							p.last-p.
+								С другой стороны начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+						.material-block
+							.materials-content__image
+								.title-block
+									h1 Щебень известняковый
+								a(href='javascript:window.print()').print__link
+								img(src='images/material-img.jpg' alt='щебень гранитный')
+								.order-online
+									a(href='#').order-online__link.modal_link Online заявка
+							p.
+								 Не следует, однако забывать, что сложившаяся структура организации способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем массового участия.
+							p.last-p.
+								 Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+						.material-block
+							.materials-content__image
+								.title-block
+									h1 Песок
+								a(href='javascript:window.print()').print__link
+								img(src='images/material-img.jpg' alt='щебень гранитный')
+								.order-online
+									a(href='#').order-online__link.modal_link Online заявка
+							p.
+								Идейные соображения высшего порядка, а также сложившаяся структура организации представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. С другой стороны новая модель организационной деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке форм развития. Таким образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Товарищи! дальнейшее развитие различных форм деятельности требуют от нас анализа систем массового участия. Таким образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых.
+							p.last-p.
+								С другой стороны начало повседневной работы по формированию позиции способствуетю С другой стороны начало повседневной работы по формированию позиции способствует. С другой стороны начало повседневной работы по формированию позиции способствует. С другой стороны начало повседневной работы по формированию позиции способствует
+						.material-block
+							.materials-content__image
+								.title-block
+									h1 ОПГС
+								a(href='javascript:window.print()').print__link
+								img(src='images/material-img.jpg' alt='щебень гранитный')
+								.order-online
+									a(href='#').order-online__link.modal_link Online заявка
+							p.
+								Идейные соображения высшего порядка, а также сложившаяся структура организации представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. С другой стороны новая модель организационной деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке форм развития. Таким образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Товарищи! дальнейшее развитие различных форм деятельности требуют от нас анализа систем массового участия.
+							p.last-p.
+								С другой стороны начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий
+
+			footer.footer
+				.wrapper
+					.upper-block.wrapper
+						ul.menu-list
+							- var header_menu = ['Главная', 'О компании', 'Наши объекты', 'Отзывы', 'Партнеры', 'Статьи', 'Контакты']
+							- each item in header_menu
+								li.menu__item
+									a(href='#').menu__link= item
+					.middle-block
+						.footer__logos
+							.img-wrap
+								img(src='images/logo-white.svg' onerror="this.onerror=null; this.src='images/logo-white.png'")
+							.img-wrap
+								img(src='images/logo-2.svg' onerror="this.onerror=null; this.src='images/logo-2.png'")
+							.img-wrap
+								img(src='images/logo-3.svg' onerror="this.onerror=null; this.src='images/logo-3.png'")
+						.footer__contacts
+							.contacts__tels
+								p 412-41-08
+								p 278-47-76
+								p 278-44-52
+							.contacts__address
+								p г.Нижний Новгород ул. Бориса Панина дом 7, корпус 5
+					.lower-block
+						.copyright Copyright &#169; 2015 Интерсфера
+						.developed_by
+							img(src='images/site52-logo.png')
+
+		script(src="js/vendor/jquery.min.js")
+		script(src="js/vendor/jquery.bpopup.min.js")
+		script(type="text/javascript" src='js/vendor/jquery.silver_track.js' charset="utf-8")
+		script(type="text/javascript" src='js/vendor/jquery.silver_track.navigator.js' charset="utf-8")
+		script(src="js/main.js")

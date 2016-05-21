@@ -1,0 +1,303 @@
+@media screen and (max-width: 1000px) {
+
+	.menu-list {
+		height: 40px;
+	}
+	.menu__item {
+		line-height: 40px;
+	}
+
+	header {
+		margin-bottom: 13vh;
+	}
+
+	header .wrapper:last-child {
+		/*height: 16vh;*/
+		height: 100px;
+	}
+
+	.header-order {
+		top: 70px;
+		/*top: 12vh;*/
+		z-index: 100;
+	}
+
+	.header__info {
+		padding-top: 10px;
+		/*padding-top: 30px;*/
+	}
+
+	.logo-header {
+		margin-right: 20px;
+		width: 90px;
+		height: 80px;
+	}
+
+	.hover-img-wrapper {
+		display: none;
+	}
+
+	.menu-list {
+/*		display: flex;
+		justify-content: space-around;*/
+		font-size: 13px;
+		/*font-size: 1.6vh;*/
+	}
+
+	.header__contacts, .logo-header {
+		vertical-align: middle;
+	}
+
+	.header__contacts .contacts__tels, .header__contacts .contacts__address {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.header__contacts .contacts__tels {
+		font-size: 17px;
+/*		font-size: 2.5vh;*/
+		margin-right: 15px;
+	}
+
+	header .wrapper {
+		max-width: 1000px;
+		width: auto;
+	}
+
+	.header__materials {
+		display: none;
+	}
+	.wide-wrapper {
+		height: auto;
+	}
+
+	.wide-wrapper .wrapper {
+		height: 35vh;
+	}
+
+	.slider {
+		height: 28vh;
+	}
+
+	.slider-text {
+		margin-top: 7vh;
+	}
+	.slider-text .h1 {
+		font-size: 35px;
+	}
+
+	.slider-text p {
+		font-size: 15px;
+		line-height: 100%;
+		letter-spacing: 0;
+	}
+
+	.logo {
+		top: -25%;
+	}
+
+	.logo .logo-wrapper{
+		width: 80px;
+		height: 75px;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+
+/*	header .wrapper:last-child {
+		height: 90px;
+	}*/
+
+	.slider-text .h1:after {
+		display: none;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	header {
+		margin-bottom: 15vh;
+	}
+
+	.slider-text {
+		margin-top: 5vh;
+	}
+
+	.slider-text .h1 {
+		margin-bottom: 10px;
+		font-size: 27px;
+	}
+
+	.pagination .first-line {
+		text-align: center;
+	}
+
+	.slider-text p {
+		font-size: 13px;
+	}
+
+	.material {
+		width: 120px;
+		height: 25px;
+		line-height: 25px;
+	}
+
+/*	.header__contacts {
+		float: right;
+	}*/
+
+	.header__info {
+		float: none;
+	}
+
+	.header-order {
+		/*left: 28%;*/
+		top: 90px;
+		/*top: 14vh;*/
+	}
+
+	.header__contacts .contacts__tels {
+		font-size: 12px;
+/*		font-size: 2vh;*/
+		padding-left: 0;
+	}
+
+	.header__contacts .contacts__tels:before {
+		display: none;
+	}
+
+	.header__contacts .contacts__address {
+		max-width: 160px;
+		font-size: 12px;
+/*		font-size: 2vh;*/
+	}
+	.logo-header img {
+		max-width: 75px;
+	}
+
+	.header__info {
+		padding-top: 10px;
+	}
+
+	.logo {
+		top: -40%;
+		left: 23vw;
+	}
+
+	.pagination {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 45%;
+		display: block;
+	}
+
+	.pagination__prev, .pagination__next {
+		font-size: 12px;
+	}
+
+	.pagination-wrapper .wrapper {
+		height: 140px;
+	}
+	.header-order {
+		height: 35px;
+		width: 120px;
+		font-size: 12px;
+		line-height: 35px;
+	}
+
+	.order-icon {
+		width: 30px;
+		height: 30px;
+		left: -20px;
+	}
+}
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+	.header__contacts, .logo-header {
+		float: left;
+		vertical-align: middle;
+	}
+	header .wrapper:last-child {
+		height: 85px;
+	}
+
+	.logo-header {
+		margin-right: 15px;
+	}
+
+	.header-order {
+		left: auto;
+		top: 0;
+
+	}
+
+	.logo {
+		left: 45%;
+		top: -50%;
+	}
+
+	.logo .logo-wrapper {
+		width: 50px;
+		height: 45px;
+	}
+	.slider-text {
+		margin-top: 2vh;
+		font-size: 11px;
+	}
+
+	.slider-text .h1 {
+		margin-top: 0;
+		font-size: 20px;
+	}
+
+	.pagination {
+		position: absolute;
+		bottom: 0;
+		top: auto;
+		right: 0;
+		left: auto;
+		width: 30%;
+		display: block;
+	}
+
+		.material {
+		display: none;
+	}
+
+
+}
+
+
+@media screen and (max-width: 480px) and (orientation: portrait){
+	header .wrapper:last-child {
+		height: 80px;
+	}
+	.header__contacts {
+		float: right;
+	}
+	.slider-text .h1 {
+		font-size: 24px;
+	}
+	.header__contacts .contacts__address {
+		max-width: 110px;
+		font-size: 10px;
+	}
+	.material {
+		display: none;
+	}
+	.header__info {
+		padding-top: 5px;
+	}
+
+	.header__contacts .contacts__tels {
+		font-size: 14px;
+	}
+	.header__contacts .contacts__address {
+		font-size: 11px;
+	}
+}
